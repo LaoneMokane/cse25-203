@@ -2,30 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movies</title>
-  < /head>
-  <body>
+</head>
+<body>
   <header>
-    <h1>Movies</h1>
-	<nav>
-	
-	 <a href="index.html">Home</a>
-	 <a href="movies.htm">Movies</a>
-	 <a href="series.html">Series</a>
-	 <a href="sports.html">Sports</a>
-	 <a href="feedback.html">Feedback</a>
-	 <a href="login.html">Login</a>
-	 
-	 
-	 </nav>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.svg" alt="logo" height="80" width="200">
+    </a>
+
+    
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="series.html">Series</a>
+      <a href="sports.html">Sports</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="login.html">Login</a>
+	  <h1>Movies</h1>
+    </nav>
   </header>
+
   <main>
+    <section aria-labelledby="hero-title" class="hero-banner">
+      <div class="hero-media" role="img" aria-label="Featured content banner">
+        [ HERO BANNER IMAGE / VIDEO ]
+      </div>
+
+      <div class="hero-content">
+        <h2 id="hero-title">Avengers</h2>
+        <p>[Short Description]</p>
+        <p>[Rating] [Duration] [Quality] [Age]</p>
+        <div>
+          <button type="button">+ Add to List</button>
+          <a href="movies.html">Watch now</a>
+        </div>
+        <p>Browse all movie content.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="movie-filter-title">
+      <h3 id="movie-filter-title">Genre Filter</h3>
+      <form action="#" method="get">
+        <label for="movie-genre">Select Genre</label>
+        <select id="movie-genre" name="genre">
+          <option>All</option>
+          <option>Action</option>
+          <option>Drama</option>
+          <option>Comedy</option>
+          <option>Sci-fi</option>
+          <option>Horror</option>
+          <option>Thriller</option>
+          <option>Romance</option>
+          <option>Animation</option>
+        </select>
+      </form>
+    </section>
+
+    <section aria-labelledby="movie-grid-title">
+      <h3 id="movie-grid-title">Catalogue Grid</h3>
+      <article><h4>Movie Card 1</h4><p>Play | Info Overlay</p></article>
+      <article><h4>Movie Card 2</h4><p>Play | Info Overlay</p></article>
+      <article><h4>Movie Card 3</h4><p>Play | Info Overlay</p></article>
+      <article><h4>Movie Card 4</h4><p>Play | Info Overlay</p></article>
+      <article><h4>Movie Card 5</h4><p>Play | Info Overlay</p></article>
+      <article><h4>Movie Card 6</h4><p>Play | Info Overlay</p></article>
+    </section>
   </main>
-  
+
   <footer>
-  <p>&copy: 2026 StreamFlix .All rights Reserved</p>
+    <section aria-labelledby="footer-contact">
+      <h3 id="footer-contact">Contact</h3>
+      <p>Email: support@streamflix.africa</p>
+      <p>Phone: +267 390 4455</p>
+      <p>Gaborone, Botswana</p>
+    </section>
+
+    <section aria-labelledby="footer-social">
+      <h3 id="footer-social">Follow Us</h3>
+      <p>Facebook | Instagram | X | YouTube</p>
+    </section>
+
+    <section aria-label="Legal and copyright">
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Help Center</a></p>
+      <small>&copy; 2026 StreamFlix. All rights reserved.</small>
+    </section>
   </footer>
-  
-  </body>
-  </html>
+</body>
+</html>

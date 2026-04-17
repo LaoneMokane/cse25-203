@@ -1,31 +1,122 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Series</title>
-  < /head>
-  <body>
+</head>
+<body>
   <header>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.svg" alt="logo" height="80" width="200">
+    </a>
+
     <h1>Series</h1>
-	<nav>
-	
-	 <a href="index.html">Home</a>
-	 <a href="movies.htm">Movies</a>
-	 <a href="series.html">Series</a>
-	 <a href="sports.html">Sports</a>
-	 <a href="feedback.html">Feedback</a>
-	 <a href="login.html">Login</a>
-	 
-	 
-	 </nav>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="series.html">Series</a>
+      <a href="sports.html">Sports</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="login.html">Login</a>
+    </nav>
   </header>
+
   <main>
+    <section aria-labelledby="hero-title" class="hero-banner">
+      <div class="hero-media" role="img" aria-label="Featured content banner">
+        [ HERO BANNER IMAGE / VIDEO ]
+      </div>
+
+      <div class="hero-content">
+        <h2 id="hero-title">To all the boys I loved before</h2>
+        <p>[Short Description]</p>
+        <p>[Rating] [Duration] [Quality] [Age]</p>
+
+        <div>
+          <button type="button">+ Add to List</button>
+          <a href="series.html">Watch now</a>
+        </div>
+
+        <p>Browse all series by genre.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="series-filter-title">
+      <h3 id="series-filter-title">Genre Filter</h3>
+      <form action="#" method="get">
+        <label for="series-genre">Select Genre</label>
+        <select id="series-genre" name="genre">
+          <option>All</option>
+          <option>Crime</option>
+          <option>Fantasy</option>
+          <option>Drama</option>
+          <option>Comedy</option>
+          <option>Sci-fi</option>
+          <option>Thriller</option>
+          <option>Horror</option>
+          <option>Reality</option>
+        </select>
+      </form>
+    </section>
+
+    <section aria-labelledby="series-cards-title">
+      <h3 id="series-cards-title">Series Cards (Season + Episodes)</h3>
+
+      <article class="series-card">
+        <h4>XO Kitty</h4>
+        <label for="xo-kitty-season">Season</label>
+        <select id="xo-kitty-season" onchange="updateEpisodes('xo-kitty', this.value)">
+          <option value="1">Season 1</option>
+          <option value="2">Season 2</option>
+          <option value="3">Season 3</option>
+        </select>
+        <p id="xo-kitty-episodes">Episodes: 10</p>
+      </article>
+
+      <article class="series-card">
+        <h4>Urban Gold</h4>
+        <label for="urban-gold-season">Season</label>
+        <select id="urban-gold-season" onchange="updateEpisodes('urban-gold', this.value)">
+          <option value="1">Season 1</option>
+          <option value="2">Season 2</option>
+          <option value="3">Season 3</option>
+          <option value="4">Season 4</option>
+        </select>
+        <p id="urban-gold-episodes">Episodes: 8</p>
+      </article>
+
+      <article class="series-card">
+        <h4>Money Heist</h4>
+        <label for="money-heist-season">Season</label>
+        <select id="money-heist-season" onchange="updateEpisodes('money-heist', this.value)">
+          <option value="1">Season 1</option>
+          <option value="2">Season 2</option>
+        </select>
+        <p id="money-heist-episodes">Episodes: 6</p>
+      </article>
+    </section>
   </main>
-  
+
   <footer>
-  <p>&copy: 2026 StreamFlix .All rights Reserved</p>
+    <section aria-labelledby="footer-contact">
+      <h3 id="footer-contact">Contact</h3>
+      <p>Email: support@streamflix.africa</p>
+      <p>Phone: +267 390 4455</p>
+      <p>Gaborone, Botswana</p>
+    </section>
+
+    <section aria-labelledby="footer-social">
+      <h3 id="footer-social">Follow Us</h3>
+      <p>Facebook | Instagram | X | YouTube</p>
+    </section>
+
+    <section aria-label="Legal and copyright">
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Help Center</a></p>
+      <small>&copy; 2026 StreamFlix. All rights reserved.</small>
+    </section>
   </footer>
-  
-  </body>
-  </html>
+</body>
+</html>
+

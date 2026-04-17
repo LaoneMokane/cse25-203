@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewpoint" content="width=device-width, initial scale=1.0">
   <title>Contact &amp; Subscribe – StreamFlix</title>
-  < /head>
+  </head>
   <body>
-  <header>
-    <h1>Feedback</h1>
+  <header><a href="index.html" class="nav-logo">
+	 <img src="images/logo.svg" alt="logo" height="80" width="200"
+	 </a>
+    
 	<nav>
 	
 	 <a href="index.html">Home</a>
@@ -16,16 +18,61 @@
 	 <a href="sports.html">Sports</a>
 	 <a href="feedback.html">Feedback</a>
 	 <a href="login.html">Login</a>
-	 
+	 <h1>Feedback</h1>
 	 
 	 </nav>
   </header>
   <main>
-  </main>
-  
+   <section aria-labelledby="contact-info-title">
+      <h2 id="contact-info-title">Contact Info</h2>
+      <p>Email: support@streamflix.africa</p>
+      <p>Phone: +267 390 4455</p>
+      <p>Location: Gaborone, Botswana</p>
+    </section>
+
+    <section aria-labelledby="feedback-form-title">
+      <h2 id="feedback-form-title">HTML5 Feedback Form</h2>
+     <form action="#" method="post" class="vertical-form">
+  <label for="full-name">Full Name</label>
+  <input id="full-name" name="fullName" type="text" required />
+
+  <label for="contact-email">Email</label>
+  <input id="contact-email" name="email" type="email" required />
+
+  <label for="plan">Plan Selection</label>
+  <select id="plan" name="plan" required>
+    <option value="">Select plan</option>
+    <option>Basic - BWP 49</option>
+    <option>Standard - BWP 100</option>
+    <option>Premium - BWP 149</option>
+  </select>
+
+  <label for="message">Feedback Message</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+</main>
+
   <footer>
-  <p>&copy: 2026 StreamFlix .All rights Reserved</p>
-  </footer>
+    <section aria-labelledby="footer-contact">
+    <h3 id="footer-contact">Contact</h3>
+    <p>Email: support@streamflix.africa</p>
+    <p>Phone: +267 390 4455</p>
+    <p>Gaborone, Botswana</p>
+  </section>
+
+  <section aria-labelledby="footer-social">
+    <h3 id="footer-social">Follow Us</h3>
+    <p>Facebook | Instagram | X | YouTube</p>
+  </section>
+
+  <hr>
+
+  <section aria-label="Legal and copyright">
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Help Center</a></p>
+    <small>&copy; 2026 StreamFlix. All rights reserved.</small>
+  </section>
   
-  </body>
-  </html>
+</body>
+</html>
